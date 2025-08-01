@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>وكالة الذكاء الاصطناعي المتطورة</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-robot"></i>
+                <h1>وكالة الذكاء الاصطناعي</h1>
+            </div>
+            <div class="status-indicator">
+                <span class="status-dot online"></span>
+                <span>متصل ونشط</span>
+            </div>
+        </header>
+
+        <!-- Main Interface -->
+        <main class="main-content">
+            <!-- AI Chat Interface -->
+            <div class="chat-container">
+                <div class="chat-header">
+                    <h2><i class="fas fa-comments"></i> محادثة ذكية</h2>
+                    <div class="chat-controls">
+
+                        <button class="btn-clear" id="btnClearChat"><i class="fas fa-trash"></i></button>
+                        <button class="btn-voice" id="btnToggleVoice"><i class="fas fa-microphone"></i></button>
+                    </div>
+                </div>
+                
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message ai-message">
+                        <div class="message-avatar">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="message-content">
+                            <p>مرحباً! أنا مساعدك الذكي. يمكنني مساعدتك في:</p>
+                            <ul>
+                                <li>تطوير وبرمجة المواقع والتطبيقات</li>
+                                <li>إصلاح الأخطاء تلقائياً</li>
+                                <li>البحث عن الوظائف والتقديم عليها</li>
+                                <li>أتمتة المهام والعمليات</li>
+                                <li>تحليل البيانات والتقارير</li>
+                            </ul>
+                        </div>
+                        <div class="message-time">الآن</div>
+                    </div>
+                </div>
+
+                <div class="chat-input-container">
+                    <div class="quick-actions">
+
+                        <button class="quick-btn" data-command="إصلاح الأخطاء">🔧 إصلاح الأخطاء</button>
+                        <button class="quick-btn" data-command="تطوير موقع">💻 تطوير موقع</button>
+                        <button class="quick-btn" data-command="البحث عن وظائف">🔍 البحث عن وظائف</button>
+                        <button class="quick-btn" data-command="تحليل البيانات">📊 تحليل البيانات</button>
+                    </div>
+                    
+                    <div class="input-area">
+
+                        <input type="text" id="chatInput" placeholder="اكتب رسالتك هنا...">
+                        <button class="btn-send" id="btnSendMessage"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Features Panel -->
+            <div class="features-panel">
+                <h3><i class="fas fa-cogs"></i> الخصائص المتقدمة</h3>
+                
+                <div class="feature-grid">
+
+                    <div class="feature-card" data-feature="auto-fix">
+                        <i class="fas fa-magic"></i>
+                        <h4>إصلاح تلقائي</h4>
+                        <p>إصلاح الأخطاء والمشاكل تلقائياً</p>
+                        <span class="status active">نشط</span>
+                    </div>
+                    
+                    <div class="feature-card" data-feature="web-dev">
+                        <i class="fas fa-code"></i>
+                        <h4>تطوير الويب</h4>
+                        <p>إنشاء وتطوير المواقع والتطبيقات</p>
+                        <span class="status active">نشط</span>
+                    </div>
+                    
+                    <div class="feature-card" data-feature="job-search">
+                        <i class="fas fa-briefcase"></i>
+                        <h4>البحث عن وظائف</h4>
+                        <p>البحث والتقديم على الوظائف تلقائياً</p>
+                        <span class="status active">نشط</span>
+                    </div>
+                    
+                    <div class="feature-card" data-feature="automation">
+                        <i class="fas fa-robot"></i>
+                        <h4>الأتمتة الذكية</h4>
+                        <p>أتمتة المهام والعمليات المعقدة</p>
+                        <span class="status active">نشط</span>
+                    </div>
+                    
+                    <div class="feature-card" data-feature="analytics">
+                        <i class="fas fa-chart-line"></i>
+                        <h4>تحليل البيانات</h4>
+                        <p>تحليل وتفسير البيانات بذكاء</p>
+                        <span class="status active">نشط</span>
+                    </div>
+                    
+                    <div class="feature-card" data-feature="learning">
+                        <i class="fas fa-brain"></i>
+                        <h4>التعلم الذاتي</h4>
+                        <p>تحسين الأداء والتعلم المستمر</p>
+                        <span class="status active">نشط</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- System Monitor -->
+            <div class="system-monitor">
+                <h3><i class="fas fa-desktop"></i> مراقب النظام</h3>
+                <div class="monitor-grid">
+                    <div class="monitor-item">
+                        <span class="label">حالة النظام:</span>
+                        <span class="value online">متصل وجاهز</span>
+                    </div>
+                    <div class="monitor-item">
+                        <span class="label">المهام النشطة:</span>
+                        <span class="value" id="activeTasks">0</span>
+                    </div>
+                    <div class="monitor-item">
+                        <span class="label">الأخطاء المصلحة:</span>
+                        <span class="value" id="fixedErrors">0</span>
+                    </div>
+                    <div class="monitor-item">
+                        <span class="label">آخر تحديث:</span>
+                        <span class="value" id="lastUpdate">الآن</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2024 وكالة الذكاء الاصطناعي المتطورة - جميع الحقوق محفوظة</p>
+            <div class="footer-links">
+
+                <a href="#" id="linkHelp">المساعدة</a>
+                <a href="#" id="linkSettings">الإعدادات</a>
+                <a href="#" id="linkAbout">حول الوكالة</a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner">
+            <i class="fas fa-cog fa-spin"></i>
+            <p>جاري المعالجة...</p>
+        </div>
+    </div>
+
+    <!-- Notification System -->
+    <div class="notification-container" id="notifications"></div>
+
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>

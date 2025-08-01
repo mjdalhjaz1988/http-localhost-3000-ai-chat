@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="وكالة مجد الحجاز الرقمية - حلول الذكاء الاصطناعي المتقدمة">
+    <meta name="keywords" content="ذكاء اصطناعي, تحليل البيانات, أتمتة, تطوير تطبيقات, مجد الحجاز">
+    <meta name="author" content="وكالة مجد الحجاز الرقمية">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="وكالة مجد الحجاز الرقمية">
+    <meta property="og:description" content="حلول الذكاء الاصطناعي المتقدمة">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://majdalhijaz.com">
+    <meta property="og:image" content="https://majdalhijaz.com/images/og-image.jpg">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="وكالة مجد الحجاز الرقمية">
+    <meta name="twitter:description" content="حلول الذكاء الاصطناعي المتقدمة">
+    <meta name="twitter:image" content="https://majdalhijaz.com/images/twitter-image.jpg">
+    
+    <title>وكالة مجد الحجاز الرقمية - الرئيسية</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "وكالة مجد الحجاز الرقمية",
+        "url": "https://majdalhijaz.com",
+        "logo": "https://majdalhijaz.com/images/logo.png",
+        "description": "حلول الذكاء الاصطناعي المتقدمة",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "SA"
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-container">
+            <div class="loading-logo">
+                <div class="logo-hologram">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <div class="loading-text">تهيئة النظام...</div>
+            </div>
+            <div class="loading-progress">
+                <div class="progress-bar"></div>
+                <div class="progress-text">0%</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Particle Background -->
+    <div id="particles-js" class="particles-background"></div>
+    
+    <!-- Matrix Rain Effect -->
+    <canvas id="matrix-canvas" class="matrix-background"></canvas>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <div class="logo-container">
+                    <div class="logo-hologram">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <span class="brand-text">وكالة مجد الحجاز الرقمية</span>
+                </div>
+            </div>
+
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active" data-section="home">
+                    <i class="fas fa-home"></i>
+                    <span>الرئيسية</span>
+                </a>
+                <a href="#services" class="nav-link" data-section="services">
+                    <i class="fas fa-cogs"></i>
+                    <span>الخدمات</span>
+                </a>
+                <a href="#ai-chat" class="nav-link" data-section="ai-chat">
+                    <i class="fas fa-robot"></i>
+                    <span>المحادثة الذكية</span>
+                </a>
+                <a href="#dashboard" class="nav-link" data-section="dashboard">
+                    <i class="fas fa-chart-line"></i>
+                    <span>لوحة التحكم</span>
+                </a>
+                <a href="#about" class="nav-link" data-section="about">
+                    <i class="fas fa-info-circle"></i>
+                    <span>حولنا</span>
+                </a>
+            </div>
+
+            <div class="nav-actions">
+                <button class="btn btn-primary" id="login-button">
+                    <i class="fas fa-user"></i>
+                    <span>تسجيل الدخول</span>
+                </button>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Section -->
+        <section id="home-section" class="section active">
+            <div class="hero">
+                <div class="hero-background">
+                    <canvas id="particles-canvas"></canvas>
+                </div>
+                
+                <div class="hero-content">
+                    <div class="container">
+                        <div class="hero-text">
+                            <h1 class="hero-title">
+                                <span class="title-line">مرحباً بك في</span>
+                                <span class="title-highlight">وكالة مجد الحجاز الرقمية</span>
+                            </h1>
+                            <p class="hero-subtitle">
+                                نحن نقدم حلول الذكاء الاصطناعي المتقدمة لتحويل أعمالك إلى المستقبل الرقمي
+                            </p>
+                            <div class="hero-actions">
+                                <button class="btn btn-primary btn-large" data-section="ai-chat">
+                                    <i class="fas fa-rocket"></i>
+                                    <span>ابدأ الآن</span>
+                                </button>
+                                <button class="btn btn-outline btn-large" data-section="services">
+                                    <i class="fas fa-play"></i>
+                                    <span>اكتشف خدماتنا</span>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <div class="stat-number" id="stat-users">0</div>
+                                <div class="stat-label">عميل راضٍ</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" id="stat-requests">0</div>
+                                <div class="stat-label">طلب مُنجز</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" id="stat-success">0</div>
+                                <div class="stat-label">% نسبة النجاح</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" id="stat-uptime">0</div>
+                                <div class="stat-label">% وقت التشغيل</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services-section" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">خدماتنا المتقدمة</h2>
+                    <p class="section-subtitle">نقدم مجموعة شاملة من حلول الذكاء الاصطناعي</p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card" data-service="text-analysis">
+                        <div class="service-icon">
+                            <i class="fas fa-file-text"></i>
+                        </div>
+                        <h3 class="service-title">تحليل النصوص</h3>
+                        <p class="service-description">
+                            تحليل متقدم للنصوص باستخدام الذكاء الاصطناعي لاستخراج المعاني والمشاعر
+                        </p>
+                        <button class="btn btn-service" data-service="text-analysis">
+                            <span>جرب الآن</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="service-card" data-service="file-analysis">
+                        <div class="service-icon">
+                            <i class="fas fa-file-upload"></i>
+                        </div>
+                        <h3 class="service-title">تحليل الملفات</h3>
+                        <p class="service-description">
+                            رفع وتحليل الملفات المختلفة بذكاء اصطناعي متطور
+                        </p>
+                        <button class="btn btn-service" data-service="file-analysis">
+                            <span>جرب الآن</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="service-card" data-service="code-generation">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="service-title">إنشاء الأكواد</h3>
+                        <p class="service-description">
+                            توليد أكواد برمجية ذكية بجودة عالية
+                        </p>
+                        <button class="btn btn-service" data-service="code-generation">
+                            <span>جرب الآن</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="service-card" data-service="job-search">
+                        <div class="service-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3 class="service-title">البحث عن الوظائف</h3>
+                        <p class="service-description">
+                            مساعد ذكي للبحث عن الوظائف المناسبة
+                        </p>
+                        <button class="btn btn-service" data-service="job-search">
+                            <span>جرب الآن</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Chat Section -->
+        <section id="ai-chat-section" class="section">
+            <div class="container">
+                <div class="chat-container">
+                    <div class="chat-header">
+                        <div class="chat-title">
+                            <i class="fas fa-robot"></i>
+                            <span>المحادثة الذكية</span>
+                        </div>
+                        <div class="chat-status">
+                            <div class="status-indicator online"></div>
+                            <span>متصل</span>
+                        </div>
+                    </div>
+                    
+                    <div class="chat-messages" id="chat-messages">
+                        <!-- Messages will be added here dynamically -->
+                    </div>
+                    
+                    <div class="typing-indicator" id="typing-indicator">
+                        <div class="typing-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <span class="typing-text">المساعد يكتب...</span>
+                    </div>
+                    
+                    <div class="chat-input-container">
+                        <div class="chat-input-wrapper">
+                            <textarea 
+                                id="chat-input" 
+                                class="chat-input" 
+                                placeholder="اكتب رسالتك هنا..."
+                                rows="1"
+                            ></textarea>
+                            <button id="send-button" class="send-button">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dashboard Section -->
+        <section id="dashboard-section" class="section">
+            <div class="container">
+                <div class="dashboard-header">
+                    <h2 class="dashboard-title">لوحة التحكم</h2>
+                    <p class="dashboard-subtitle">مراقبة الأداء والإحصائيات</p>
+                </div>
+                
+                <div class="dashboard-grid">
+                    <div class="dashboard-card">
+                        <div class="card-header">
+                            <h3 class="card-title">إجمالي الطلبات</h3>
+                            <i class="fas fa-chart-bar card-icon"></i>
+                        </div>
+                        <div class="card-content">
+                            <div class="metric-value" id="total-requests">0</div>
+                            <div class="metric-change positive">+12%</div>
+                        </div>
+                    </div>
+                    
+                    <div class="dashboard-card">
+                        <div class="card-header">
+                            <h3 class="card-title">المستخدمون النشطون</h3>
+                            <i class="fas fa-users card-icon"></i>
+                        </div>
+                        <div class="card-content">
+                            <div class="metric-value" id="active-users">0</div>
+                            <div class="metric-change positive">+8%</div>
+                        </div>
+                    </div>
+                    
+                    <div class="dashboard-card">
+                        <div class="card-header">
+                            <h3 class="card-title">معدل النجاح</h3>
+                            <i class="fas fa-check-circle card-icon"></i>
+                        </div>
+                        <div class="card-content">
+                            <div class="metric-value" id="success-rate">0</div>
+                            <div class="metric-change positive">+2%</div>
+                        </div>
+                    </div>
+                    
+                    <div class="dashboard-card">
+                        <div class="card-header">
+                            <h3 class="card-title">زمن الاستجابة</h3>
+                            <i class="fas fa-clock card-icon"></i>
+                        </div>
+                        <div class="card-content">
+                            <div class="metric-value" id="response-time">0</div>
+                            <div class="metric-change negative">-5%</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="progress-section">
+                    <h3 class="progress-title">تقدم المشاريع</h3>
+                    <div class="progress-items">
+                        <div class="progress-item">
+                            <div class="progress-info">
+                                <span class="progress-name">تطوير النظام</span>
+                                <span class="progress-percentage">85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-bar-fill" data-width="85%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="progress-item">
+                            <div class="progress-info">
+                                <span class="progress-name">تدريب النماذج</span>
+                                <span class="progress-percentage">92%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-bar-fill" data-width="92%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="progress-item">
+                            <div class="progress-info">
+                                <span class="progress-name">اختبار الجودة</span>
+                                <span class="progress-percentage">78%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-bar-fill" data-width="78%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about-section" class="section">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2 class="about-title">حول وكالة مجد الحجاز الرقمية</h2>
+                        <p class="about-description">
+                            نحن وكالة متخصصة في تقديم حلول الذكاء الاصطناعي المبتكرة. نهدف إلى تمكين الشركات والأفراد من الاستفادة من قوة التكنولوجيا المتقدمة لتحقيق أهدافهم وتطوير أعمالهم.
+                        </p>
+                        
+                        <div class="tech-stack">
+                            <h3 class="tech-title">التقنيات المستخدمة</h3>
+                            <div class="tech-grid">
+                                <div class="tech-item">
+                                    <i class="fab fa-python"></i>
+                                    <span>Python</span>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fab fa-js-square"></i>
+                                    <span>JavaScript</span>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fas fa-brain"></i>
+                                    <span>TensorFlow</span>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fab fa-react"></i>
+                                    <span>React</span>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fab fa-node-js"></i>
+                                    <span>Node.js</span>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fas fa-database"></i>
+                                    <span>MongoDB</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-image">
+                        <div class="image-container">
+                            <div class="hologram-effect">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">تسجيل الدخول</h3>
+                <button class="modal-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <form id="login-form" class="login-form">
+                <div class="form-group">
+                    <label for="email" class="form-label">البريد الإلكتروني</label>
+                    <input type="email" id="email" name="email" class="form-input" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password" class="form-label">كلمة المرور</label>
+                    <input type="password" id="password" name="password" class="form-input" required>
+                </div>
+                
+                <button type="submit" class="btn btn-primary btn-full">
+                    <span>تسجيل الدخول</span>
+                    <i class="fas fa-sign-in-alt"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
